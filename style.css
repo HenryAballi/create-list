@@ -1,0 +1,45 @@
+* {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1 {
+  font-family: 'Work Sans', sans-serif;
+  text-shadow: 2px 2px rgb(209, 206, 206);
+  margin: 1em 0;
+}
+
+input {
+  width: 300px;
+  height: 35px;
+  border-radius: 1em;
+}
+
+.firstButton {
+  width: 50px;
+  height: 30px;
+  border-radius: 1em;
+}
+
+.divUl {
+  display: flex;
+  justify-content: center;
+}
+
+.ul {
+  margin-top: 2em;
+  border: red solid 2px;
+  width: 350px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: .5em;
+}
+
+span {
+  border: rgb(36, 8, 8) solid 2px;
+}
