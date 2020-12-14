@@ -20,7 +20,9 @@ secondButton.addEventListener("click", () => {
 const createList = () => {
   console.log("Let's go...");
   let li = document.createElement("li");
-  li.appendChild(document.createTextNode(input.value));
+  let span = document.createElement("span");
+  span.appendChild(document.createTextNode(input.value));
+  li.appendChild(span);
   li.appendChild(addButton(li));
   ul.appendChild(li);
   input.value = "";
@@ -28,7 +30,8 @@ const createList = () => {
 
 const addButton = (li) => {
   let btn = document.createElement("button");
-  btn.innerHTML = "remove";
+  btn.innerHTML = "X";
+  btn.setAttribute("class", "removeList");
   btn.addEventListener("click", () => {
     ul.removeChild(li);
   })
