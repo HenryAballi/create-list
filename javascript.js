@@ -54,4 +54,13 @@ const addListAfterKeyPress = (event) => {
   }
 }
 
-input.addEventListener("keypress", addListAfterKeyPress)
+input.addEventListener("keypress", addListAfterKeyPress);
+
+//darkMode...
+let myHTML = document.querySelector("html")
+let darkMode = document.getElementById("checkbox");
+console.log(darkMode);
+darkMode.addEventListener("change", () => {
+  console.log("darkmode....");
+  myHTML.classList.toggle("darkMode"); 
+})

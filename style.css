@@ -4,11 +4,29 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  background-color: rgba(143, 180, 236, 0.959);
+  background-color: var(--body-background-color);
+}
+
+:root {
+  --body-background-color:rgba(143, 180, 236, 0.959);
+  --h1-text-shadow: 2px 2px rgb(209, 206, 206);
+  --input-background-color: black;
+  --input-color: rgb(179, 190, 199);
+  --removeList-color: green;
+  --firstButton-background-color: gray;
+}
+
+.darkMode:root {
+  --body-background-color:rgba(8, 29, 61, 0.959);
+  --h1-text-shadow: 2px 2px rgb(233, 30, 30);
+  --input-background-color: rgb(170, 161, 161);
+  --input-color: rgb(179, 190, 199);
+  --removeList-color: rgb(204, 192, 27);
+  --firstButton-background-color: rgb(177, 70, 136);
 }
 
 h1 {
-  text-shadow: 2px 2px rgb(209, 206, 206);
+  text-shadow: var(--h1-text-shadow);
   margin: 1em 0;
 }
 
@@ -16,18 +34,18 @@ input {
   width: 300px;
   height: 35px;
   border-radius: 1em;
-  background-color: black;
+  background-color: var(--input-background-color);
   text-align: left;
   padding-left: 5px;
   font-weight: 700;
-  color: rgb(179, 190, 199);
+  color: var(--input-color);
 }
 
 .firstButton {
   width: 50px;
   height: 30px;
   border-radius: 1em;
-  background-color: gray;
+  background-color: var(--firstButton-background-color);
   font-weight: 700;
 }
 
@@ -52,7 +70,9 @@ li {
   width: 20px;
   height: 20px;
   margin-right: 200px;
-  color: green;
+  color: var(--removeList-color);
+  border-radius: 1em;
+  overflow: hidden;
   border: none;
 }
 
