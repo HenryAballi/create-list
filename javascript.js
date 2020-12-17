@@ -30,7 +30,9 @@ const createList = () => {
 
 const addButton = (li) => {
   let btn = document.createElement("button");
-  btn.innerHTML = "X";
+  let i = document.createElement("i");
+  i.setAttribute("class", "fas fa-check-circle");
+  btn.appendChild(i);
   btn.setAttribute("class", "removeList");
   btn.addEventListener("click", () => {
     ul.removeChild(li);
@@ -57,10 +59,11 @@ const addListAfterKeyPress = (event) => {
 input.addEventListener("keypress", addListAfterKeyPress);
 
 //darkMode...
-let myHTML = document.querySelector("html")
+let myHTML = document.querySelector("html");
 let darkMode = document.getElementById("checkbox");
+let small = document.querySelector("small");
 console.log(darkMode);
 darkMode.addEventListener("change", () => {
   console.log("darkmode....");
-  myHTML.classList.toggle("darkMode"); 
+  myHTML.classList.toggle("darkMode");
 })
