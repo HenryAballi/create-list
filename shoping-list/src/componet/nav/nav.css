@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.nav ul li {
+  list-style: none;
+  padding: .5em;
+  background-color: green;
+  margin-right: 5px;
+}
+
+nav ul {
+  border: yellow solid 2px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav {
+  border: solid red 2px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav div {
+  display: none;
+}
+.nav div span {
+  display: block;
+  border: black solid 1px;
+  width: 40px;
+  margin-bottom: 4px;
+  height: 2px;
+}
+
+@media screem and (min-width: 600px) {
+  .nav div {
+    display: inline;
+  }
+}

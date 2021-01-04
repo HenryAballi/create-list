@@ -1,0 +1,28 @@
+.hooks {
+    background-color: green;
+padding-bottom: 1em;
+}
+
+.hooks p {
+    padding: 1em 0;
+    font-size: 2em;
+}
+
+.hooks p span {
+    padding: 1em 0;
+    font-size: 2em;
+}
+.hooks p span:hover {
+    color: rebeccapurple;
+    transition: 2s;
+}
+
+.hooks button {
+    height: 3em;
+    width: 5em;
+    border-radius: 1em;
+    color: red;
+    font-weight: 700;
+    letter-spacing: normal;
+    text-transform: lowercase;
+}
